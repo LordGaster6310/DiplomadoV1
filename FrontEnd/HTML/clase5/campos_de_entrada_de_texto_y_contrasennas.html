@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>campos_de_entrada_de_texto_y_contrasennas</title>
+</head>
+<body>
+   <!--  
+    br*3+h2{Campos de entrada de texto y contraseña}+form[method="" action="" enctype=""]>div>label{Nombre:}+input[type="text" id="nombre" name="nombre" size="30" maxlenght="15" placeholder="Ingrese su Nombre"]^div>label[for="clave"]{Contraseña}+input[type="password" id="clave" name="clave" size="16" maxlength="10" placeholder="Ingrese su contraseña" pattern="[ñÑáÁéÉíÍóÓúÚa-zA-Z0-9]{4,8}" title="No inserte simbolos" ]^input[type="submit"]
+ -->
+    <br><br><br>
+    <h2>Campos de entrada de texto y contraseña</h2>
+    <form action="" method="" enctype="">
+        <div><label for="">Nombre:</label><input type="text" id="nombre" name="nombre" size="30" maxlenght="15" placeholder="Ingrese su Nombre"></div>
+        <div><label for="clave">Contraseña</label><input type="password" id="clave" name="clave" size="16" maxlength="16" placeholder="Ingrese su contraseña" pattern="^zanahoria14" title="No inserte simbolos"></div>
+        <input type="submit">
+    </form>
+    <!-- 
+    .               -Cualquier caracter, excepto nueva linea
+    /d              -Cualquier Digito(0-9)
+    /D              -No es un digito(0-9)
+    \W              - No es un Caracter de Palabra.
+    \s              - Espacios de cualquier tipo. (espacio, tab, nueva linea)
+    \S              - No es un Espacio, Tab o nueva linea.
+
+    Cuantificadores:
+    * - 0 o Más
+    + - 1 o Más
+    ? - 0 o Uno
+    {3} - Numero Exacto
+    {3,4} - Rango de Numeros (Minimo, Maximo)
+    -->
+</body>
+</html>

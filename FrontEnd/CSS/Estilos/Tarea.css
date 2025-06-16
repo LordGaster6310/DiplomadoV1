@@ -1,0 +1,127 @@
+/* Estudiante:Angelo Ssayr Roa Zambrano C.I: 31668178 */
+
+
+body {
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: rgb(59, 59, 59); 
+    padding: 6px; 
+}
+.main-container {
+    /* Contenedor Principal */
+    padding: 15px 30px; 
+    border: 25px inset #4a0000;/* !cambio 5 tipo de borde, tamaño y color */
+    margin: 50px auto; 
+   /*  background-color: #2f00a5; */
+    background: linear-gradient(rgb(0, 0, 0) ,rgb(59, 59, 59));
+    border-radius: 120px 20px;/*!Cambio 6, borde diferente en ambos lados  */
+    width: 80%; 
+}
+.intro-section {
+    /* Sección de Introducción */
+    margin: 30px 0 20px; 
+    padding: 20px;
+    border: 8px double #a800be;/* !cambio 4 tipo de border y tamaño */
+    background-color: #333333;/* !cambio 3 fondo oscuro */
+    text-align: center;
+    /* color: #ffffff!important;  *//* !cambio 2, letra de la intro */
+}
+#colorText{
+    color: rgb(255, 245, 182)/* !cambio 11 , letra para ciertos parafos a color blanco
+     */
+}
+.cards-wrapper {
+    padding: 10px 20; 
+}
+.content-card {
+    /* Tarjeta de Contenido */
+    margin: 15px;
+    padding-top: 10px;
+    padding-right: 25px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    border-top: 3px solid #2ecc71;
+    
+    border-bottom: 3px solid #2ecc71;
+    border-left: 10px dotted #7f8c8d;
+    border-right: 1px dotted #7f8c8d;
+   /*  background-color:rgb(255, 144, 40);/* ! cambio 1 */ 
+    background: linear-gradient(rgb(0, 15, 131), rgb(0, 234, 255));/* !cambio 13 degradado de color para la tarjeta de imagenes */
+
+    border-radius: 8px;
+    margin-bottom: 200px; 
+
+}
+.buttons-container {
+    /* Contenedor de Botones: Usa flexbox para alinear los botones */
+    margin-top: 30px; 
+}
+.action-button {
+    /* Botones de Acción */
+    margin: 10px;
+    padding: 12px 25px;
+    border: 15px groove #8e44ad;
+    background-color: #ecf0f1;
+    border-radius: 25px;
+    font-weight: bold;
+}
+.action-button:hover {
+    background-color: #08bee7; /* Cambio de color al pasar el mouse */
+}
+.footer-element {
+    /* Elemento de Pie de Página */
+    border-radius: 80px 0 0 10px;
+    margin-top: 40px;
+    padding: 30px;
+    border: 4px ridge #df0a0aec;
+    background-color: #050301;
+    text-align: center;
+    font-size: 18;
+}
+
+h1 { 
+    font-size:xx-large; 
+    word-spacing: 25px;
+    font-weight: bolder; 
+    color: #dbd712; 
+    margin-bottom: 2px; 
+}
+h2 { 
+    font-size:smaller; 
+    font-weight:lighter; 
+    color: #34495e; 
+    margin-bottom: 4px; 
+}
+h3 { 
+    font-size: 20; 
+    font-weight: bold; 
+    color: #d43eca; 
+    margin-bottom: 80px; 
+    text-shadow: 3px 3px 3px rgb(0, 0, 0);
+}
+p { 
+    font-size: 18; /* !Cambio 15 , tamaño de letra  */
+    color: #000000; /* !cambio 14 , color de letra de los parafos sin id */
+    margin-bottom: 20px; 
+}
+.text-center { 
+    text-align:center;
+    text-decoration: underline;
+}
+img { 
+    display: block; 
+    max-width: 100%; 
+    height: auto; 
+    margin: 100px auto; 
+    border-radius: 35px; 
+}
+
+.DataNew{
+    background-color: #000000;
+    background: linear-gradient(black, red);/* !cambio 10 degradado de color para la tarjeta de imagenes */
+    box-shadow: 30px 15px 8px white;/* !cambio 9 iluminado personalizado para la targeta de margenes  */
+}
+.DataNew h3{
+    text-align: center;/* !cambio8 texto alineado al centro */
+    font-size: 50px;/* ! cambio 7 tamaño de la letra del titulo de tarjeta margenes */
+    
+}

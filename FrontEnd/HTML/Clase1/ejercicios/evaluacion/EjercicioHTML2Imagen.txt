@@ -1,0 +1,4 @@
+Angelo Ssayr Roa Zambrano
+CI: 31668178
+Ejercicio n°2:
+img[src="../Imagen/imagen-pelicula-banner.jpg" alt="Cursos Presenciales" title="Aprende con nuestros cursos" width="100%"]

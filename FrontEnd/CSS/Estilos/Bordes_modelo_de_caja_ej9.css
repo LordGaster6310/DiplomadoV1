@@ -1,0 +1,31 @@
+.celeste{
+    background-color: #66FAFF;
+}
+.gris{
+    background-color: gray;
+}
+.morado{
+    background-color: #C000FF;
+}
+.borde{
+   /*  border:blue 4px solid; */ /* borde solido y visibvle */
+    /* border:blue 4px none; */ /* borde no visible */
+    /* border:blue 4px hidden; */ /* borde no visible */
+    /* border:blue 4px dotted; */ /* borde punteado*/
+    /* border:blue 4px groove; */ /* borde ranurado 3d*/
+   /*  border:blue 4px double; */ /* borde ranurado 3d*/
+
+    /* border:blue 4px dashed; */ /* borde ranurado 3d*/
+   /*  border:blue 4px ridge;  *//* borde ranurado 3d*/
+    border:blue 14px inset; /* borde hundido 3d*/
+   /*  border:blue 14px outset;  *//* borde resaltado 3d*/
+
+
+
+
+    
+
+    
+
+    
+}

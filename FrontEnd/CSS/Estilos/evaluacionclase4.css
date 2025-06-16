@@ -1,0 +1,102 @@
+body{
+    background: #000;
+}
+.header{
+    background:silver;
+    background: #b9b9b9;
+    background: linear-gradient(51deg,#b9b9b9 0%, #8a8a8a 80%);
+    background: -webkit-linear-gradient(51deg,#b9b9b9 0%, #8a8a8a 80%);
+    background: -moz-linear-gradient(51deg,#b9b9b9 0%, #8a8a8a 80%);
+}
+nav{
+    list-style: none;
+    height: 80px;
+
+}
+nav ul a{
+    text-decoration: none;
+    height: 50px;
+    font-size: 20;
+
+
+}
+nav  a li{
+    position: relative;
+    display: inline-block;
+    height: 100%;
+    margin-left: 40px;
+    margin-right: 80px;
+
+}
+nav a li::after {
+  content: '';
+  position: absolute;
+  bottom: 15px;
+  left: 0;
+  width: 0;
+  height: 2px; /* Grosor de la línea */
+  background-color: blue; /* Color de la línea */
+  transition: width 2s ease; /* Transición para la animación */
+}
+
+nav a li:hover::after {
+  width: 100%; /* Ancho completo al pasar el cursor */
+}
+
+nav li{
+    height: 30px;
+    padding: 20px 10px;
+}
+.position-izq{
+    float: left;
+}
+.position-dere{
+    float: right;
+}
+#letraHeader{
+    font-size: 35px;
+}
+.title{
+    position: relative;
+    display: inline-flex;
+    padding-top: 15%;
+    padding-left: 40%;
+    padding-right: 40%;
+    font-size: 50px;
+    height: 100px;
+    width: 500px;
+    color: purple;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    height: 70vh;
+    overflow-y: scroll; /* Habilitar scroll vertical */
+    overflow-x: hidden;
+}
+.content{
+    display: block;
+    padding-top: 50px;
+}
+.historia{
+    position: relative;
+    color: red;
+    width: 540px;
+    height: 500px;
+    display: flex;
+    padding: 20px;
+    margin-top: 150px;
+    margin-left: 40%;
+    margin-right: 40%;
+    border: white solid 10px;
+    font-size: 30px;
+    word-wrap: break-word;
+    background: #066ef3;
+    background: linear-gradient(90deg,#066ef3 0%, #005dc5 40%, #00438d 80%);
+    background: -webkit-linear-gradient(90deg,#066ef3 0%, #005dc5 40%, #00438d 80%);
+   
+    background: -moz-linear-gradient(90deg,#066ef3 0%, #005dc5 40%, #00438d 80%);
+}
+.historia:hover{
+    color: purple;
+}

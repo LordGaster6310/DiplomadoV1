@@ -1,0 +1,16 @@
+a:active{
+    background-color: #0C00FF;/* COLOR Azul */
+}/* Cambiar el color del enlace cuando no se ah ingresado al mismoi */
+
+a:link{
+    color: #FF0000;/* Color rojo */
+
+}/* Cambiar el color del enlace cuando no se ah ingresado al mismo */
+
+a:visited{
+    color:#505050/* color gris */
+} /* Cambiar el color del enlace luego de que ya ah sido visitado */
+
+a:hover{
+    color: #00FF06;/* COLOR verde */
+}/* Efecto al pasar el curso del mouse sobre la etiqueta a */

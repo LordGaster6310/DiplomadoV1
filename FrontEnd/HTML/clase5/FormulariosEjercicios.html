@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios de formulario HTML.</title>
+</head>
+<body>
+   <!--  br*3+h2{Formularios - Ejercicios}+form[action="" enctype=""]>div>label[for="nombre"]{nombre: }+input[type="text" placeholder="Angelo" name="nombre" size="30" ]^br+div>label[for="apellido"]{Apellido: }+input[type="text" placeholder="Roa" name="Apellido" size="30" ]^br+div>label[for="password"]{Contraseña: }+input[type="password" placeholder="1234.a" name="password" size="20" ]^br+br+div>label[for="Cursos_realizados" ]>b{cursos realizados }^(br+input[type="checkbox" name="Cursos_realzados" value="Diseño_web_"]{Diseño de paginas })*4^br+div>label[for="sexo"]>b{sexo: }^input[type="radio" name="sexo" value="Masculino"]{Masculino}+input[type="radio" name="sexo" value="Femenino"]{Femenino}^br+div>label[for="edad"]>b{edad}^select[ name="edad" id="edad"]>option[value=""]{Seleccione..}+option[value="0_20"]{de 0 a 20 años}+option[value="21_40"]{de 21 a 40 años}+option[value="42_60"]{de 41 a 60 años}+option[value="61_80"]{de 61 a 80 años}+option[value="80+"]{mas de 80 años}^br+br+div>label[for="foto"]>b{Adjuntar tu foto de perfil: }^input[type="file" id="foto" name="foto"]+br+br+div>label[for="Observaciones"]>b{Observaciones: }^textarea[name="observaciones" id="" placeholder="Escribe aqui tus observaciones" style="height:100px; width:15%;"]^^br+div>input[type="submit" value="enviar" style="height:35px"]+input[type="reset" value="Limpiar" style="height:35px"] 
+    Nota: el texto de los checkbox del area de cursos se deben de escribir manualmente la data tanto del texto a mostrar como los values de los atributos de cada uno con los requeridos-->
+    <br><br><br>
+    <h2>Formularios - Ejercicios</h2>
+    <form action="" enctype="">
+        <div><label for="nombre">nombre: </label><input type="text" placeholder="Angelo" name="nombre" size="30"></div>
+        <br>
+        <div><label for="apellido">Apellido: </label><input type="text" placeholder="Roa" name="Apellido" size="30"></div>
+        <br>
+        <div><label for="password">Contraseña: </label><input type="password" placeholder="1234.a" name="password" size="20"></div>
+        <br><br>
+        <div><label for="Cursos_realizados"><b>cursos realizados </b></label><br><input type="checkbox" name="Cursos_realzados" value="Diseño_web_">Diseño de paginas </input><br><input type="checkbox" name="Cursos_realzados" value="Diseño_web_">Diseño de paginas </input><br><input type="checkbox" name="Cursos_realzados" value="Diseño_web_">Diseño de paginas </input><br><input type="checkbox" name="Cursos_realzados" value="Diseño_web_">Diseño de paginas </input></div>
+        <br>
+        <div><label for="sexo"><b>sexo: </b></label><input type="radio" name="sexo" value="Masculino">Masculino</input><input type="radio" name="sexo" value="Femenino">Femenino</input></div>
+        <br>
+        <div>
+            <label for="edad"><b>edad</b></label>
+            <select name="edad" id="edad">
+                <option value="">Seleccione..</option>
+                <option value="0_20">de 0 a 20 años</option>
+                <option value="21_40">de 21 a 40 años</option>
+                <option value="42_60">de 41 a 60 años</option>
+                <option value="61_80">de 61 a 80 años</option>
+                <option value="80+">mas de 80 años</option>
+            </select><br><br>
+            <div>
+                <label for="foto"><b>Adjuntar tu foto de perfil: </b></label><input type="file" id="foto" name="foto"><br><br>
+                <div><label for="Observaciones"><b>Observaciones: </b></label><textarea name="observaciones" id="" placeholder="Escribe aqui tus observaciones" style="height:100px; width:15%;"></textarea></div>
+            </div>
+            <br>
+            <div><input type="submit" value="enviar" style="height:35px"><input type="reset" value="Limpiar" style="height:35px"></div>
+        </div>
+    </form>
+</body>
+</html>

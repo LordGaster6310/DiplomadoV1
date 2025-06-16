@@ -1,0 +1,38 @@
+.celeste{
+    background:#66FAFF;
+    margin-top: 20px;
+    margin-left: 45%;
+    height: 100px;
+    width: 100px;
+}
+.gris{
+    background-color: gray;
+    margin-top: 20px;
+    margin-left: 35%;
+    height: 150px;
+    width: 370px;
+    padding-bottom: 10px;
+}
+.morado{
+    background-color: #C000FF;
+    margin-top: 30px;
+    margin-left: 25%;
+    padding: 10px 80px;
+    height: 100px;
+    width: 500px;
+}
+.negro{
+    background-color: #000;
+    color: white;
+    margin-top: 50px;
+    margin-left: 15%;
+    height: 100px;
+    width: 900px;
+    padding: 20px;
+}
+
+.borde{
+    border-style: inset;/* Estilo del borde -valores 2d:dotted - dashed - solid -double . valores3d: groove -ridge -inset -outset */
+    border-width: 5px;
+    border-color: #C000FF;
+}

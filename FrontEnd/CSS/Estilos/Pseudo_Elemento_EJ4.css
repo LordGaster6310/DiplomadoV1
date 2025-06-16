@@ -1,0 +1,22 @@
+p::before{
+    content: 'A - CONTENIDO ANTES DEL PARRAFO - ';
+    color: #FF0000;/* Color Rojo */
+}/* Cambios antes del selector */
+
+p::after{
+    content: '- CONTENIDO DESPUES DEL PARRAFO -';
+    color: #00FF06;/* Color verde */
+}/* Cambios despues del selector */
+
+p::first-letter{
+    color: #000000;/* color negro */
+}/* cambios en la primera letra del contenido */
+
+p::first-line{
+    color: #0C00FF;/* Color Azul */
+}/* Cambios en la primera linea del contenido del selector */
+
+p::selection{
+    color:#FFFFFF;/* Color Blanco */
+    background-color: #8D00B6;/* Fondo Morado */
+}/* Cambios en la seleccion hecha en la selector  */

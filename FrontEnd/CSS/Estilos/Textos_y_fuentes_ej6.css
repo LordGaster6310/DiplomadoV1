@@ -1,0 +1,20 @@
+p{
+    text-indent: 30%;/* Desplazamiento de la primera linea */
+    text-align: justify;
+    text-decoration: none;
+    letter-spacing: 0px;
+    word-spacing: 20px;
+    text-transform: capitalize;/* transformacion del texto */
+    line-height: 30px; /* tamaño del espacio emtre lineas */
+    vertical-align: middle;/* Alineacion vertical - valores : top | midle | bottonm */
+
+}
+
+.Fuente-arial{
+    font-family: Arial, Helvetica, sans-serif;/* familia de fuente */
+    font-style: oblique;/* estilo de fuente - valores:norma | italic     oblique */
+    font-variant: small-caps;/* convierte el texto en mayusculas, ocupando el espacio del texto en minuscula */
+    font-weight: normal; /* anchura de los caracteres  */
+                            /* valores: normal| bold |bolder |lighter| 100|200|300|400|500|600|700|800|900 */
+    font-size: large;/* tamaño de la fuente - valores: xx-small | x-small  | small | medium| large  | x-large*/
+}

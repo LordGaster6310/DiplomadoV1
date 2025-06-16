@@ -1,0 +1,11 @@
+.fondo-cubiwelt-imagen{
+    background-image: url("../imagen/imagen.jpg");
+    height: 768px;/* indicamos altura */
+    width: 70%;
+    background-position: center;/* Asignamos la posicion horizontal del fondo */
+    background-repeat: repeat;/* permitimos o no permitimos que se repita la imagen de fondo */
+    background-size: cover;
+    /* cover:redimensionamos la imagen de fondo para que cubra el contenido por completo */
+    /* contain: permitimos que la imagen se miestre por completo dentro del contenedor */
+    opacity: 1;
+}

@@ -1,0 +1,33 @@
+.celeste{
+    background-color:#66FAFF;
+    width: 150px;
+    height: 150px;
+}
+.gris{
+    background-color: gray;
+    width: 150px;
+    height: 150px;
+}
+.morado{
+    background-color: #c000ff;
+        width: 150px;
+    height: 150px;
+
+}
+.no-visualizar{
+   /*  visibility: hidden; */
+    display: none;
+    /* Los elementos se oculatan y no se muestra el espacio reservado */
+}
+.visualizar-en-linea{
+    display: inline;
+    /* los elementos se muestran en la misma linea(respetando el flijo) y no se aceptan las propiedades width,height ni margenes verticales */
+}
+.visualizar-en-bloque{
+    display: block;
+    /* Los elementos se muestran en lineas independientes y se aceptan las propiedades width,height y margenes verticals*/
+}
+.visualizar-en-linea-bloque{
+    display: inline-block;
+    /*los elementos se muestran en la misma linea (respetando el flujo   y se aceptan las propiuedades width,height y margenes verticals  */
+}

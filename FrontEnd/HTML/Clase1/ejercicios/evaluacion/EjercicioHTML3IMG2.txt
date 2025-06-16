@@ -1,0 +1,7 @@
+Angelo Ssayr Roa Zambrano
+CI: 31668178
+Ejercicio n°3:
+
+img[src="../Imagen/imagen-pelicula-banner.jpg" alt="Pelicula de mario" title="pelicula 2023" width="100%"]+(img[src="../Imagen/imagen-azul.jpg" alt="Cursos Presenciales" title="Aprende con nuestros cursos" width="25%" height="200px"])*3+img[src="../Imagen/imagen-azul.jpg" alt="Cursos Presenciales" title="Aprende con nuestros cursos" width="24%" height="200px"]+(img[src="../Imagen/imagen-naranja.jpg" alt="imagen naranja" title="imagen-naranja" width="33%" height="300px"])*3+img[src="../Imagen/imagen-gris.jpg" alt="imagen gris" title="imagen gris" width="49%" height="400px"+]+img[src="../Imagen/imagen-gris.jpg" alt="imagen gris" title="imagen gris" width="50%" height="400px"]
+
+teniendo en cuenta que manualmente despues de ejecutar el codigo emmet, se debe de al finalizar cada etiqueta img darle enter para que la siguiente img este en la linea de codigo posterior a la la img anterior, esto se debe de realizar para que los cambio se muestren como se desea en la pagina html

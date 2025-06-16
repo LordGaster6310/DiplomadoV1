@@ -1,0 +1,4 @@
+Angelo Ssayr Roa Zambrano
+CI: 31668178
+Ejercicio n°1:
+    h1{Sinopsis de la pelicula de super mario bros }+hr+p>cite{Adaptacion de la serie de videojuegos de nintendo }{La pelicula cuenta la historia de }+b{mario y luigi }{,dos hermanos que viajan a un mundo oculto para }+u{rescatar a la princesa peach }{capturada por el malvado }+i{rey bowser }+mark{las cosas, sin embargo no seran sencillas }^br+p{Mario y Luigi }>strong{ tendra que enfrentarse a un ejercito de setas animadas }{antes de luchar contra su }+del{oponente}{ . }+mark{Rutas de ladrillos y castillos con multiples peligros }{seran algunos de los obstaculos que lso hermanos tendran que superar para }+em{conseguir su objetivo }^hr+blockquote>q{El sacricio vale la pena con tal de rescatar a la princesa }+footer{ -Mario Bros}

@@ -1,0 +1,17 @@
+<h4 class="titulo-noticia">Cómo hacer la hamburguesa perfecta: nunca uses la espátula</h4>
+<p class="resumen-noticia">La hamburguesa es uno de los platos más socorridos, ya que son fáciles de hacer y que gusta a todo el mundo, sobre todo, a los más pequeños. Además, es un plato que se puede adaptar a todas las preferencias y con muchas posibilidades a la hora de elegir los ingredientes.
+
+<h4 class="titulo-noticia">McDonald's empieza a comercializar una triple 'cheeseburger' en Reino Unido</h4>
+<p class="resumen-noticia">La cadena de alimentación McDonald's ha lanzado en 60 restaurantes del Reino Unido un nuevo producto: la triple cheeseburger.Si las ventas de este producto funcionan, McDonald's extendería su distribución por el resto de restaurantes de la cadena en Gran Bretaña.
+
+<h4 class="titulo-noticia">Así es el 'gadget' portátil para cocinar pizzas caceras de forma tradicional </h4>
+<p class="resumen-noticia">La pizza es uno de esos bocados a los que pocos se resisten. Si bien es cierto que la piña es el único ingrediente que puede lograr que un auténtico amante de este manjar se niegue a darle un bocado, también lo es que, quien sabe apreciarlo bien, no se conforma con disfrutarlo prefabricado. 
+
+<h4 class="titulo-noticia">¿Es saludable comer pizza? Sí y no, te explicamos</h4>
+<p class="resumen-noticia">Dependiendo del tipo de corteza, la cantidad de queso y los ingredientes utilizados, la pizza puede clasificar en cualquier lugar desde nutricionalmente decente a un desastre de la dieta.
+
+<h4 class="titulo-noticia">Una pizzería cobra un plus en el pedido si quieres que el repartidor "te mire a los ojos y te diga que todo estará bien"</h4>
+<p class="resumen-noticia">¿Quién no ha tenido un día en el que parece que todo va mal? A veces hay que darse un tiempo para ver las cosas desde otra perspectiva o simplemente pedir una pizza para levantar el ánimo.
+
+<h4 class="titulo-noticia">Nuevo campeón mundial de comer hot dogs; devoró 62 en 10 minutos</h4>
+<p class="resumen-noticia">Matthew ‘Megasapo’ Stonie devoró 62 perros calientes en 10 minutos durante el Concurso Internacional de Comer Hot Dogs de Nathan’s Famous este sábado en Nueva York y arrebató el cinturón amarillo mostaza y el título al campeón, quien comió 60.

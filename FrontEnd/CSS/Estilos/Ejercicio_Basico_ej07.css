@@ -1,0 +1,68 @@
+p{
+    text-align: justify;
+    /* Alineacion horizonta del texto -valores: right| left| center | justify */
+}
+h1{
+    background-color:#B200B9;
+    color: #000000;
+    text-align: center;
+}
+h2{
+    background-color: #000000;
+    color: #ffffff;
+
+}
+h3{
+    background-color: #909090;
+    text-align: center;
+}
+*{
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-variant: small-caps;
+    font-weight: normal;
+
+}
+.negrita{
+    font-weight: bold;
+}
+
+.letra-azul{
+    color: #2849EF;
+}
+
+.fondo-amarillo{
+    color: #000000;
+    background-color: #FFF600;
+}
+
+.fondo-azul{
+    background-color: #0048ff;
+}
+
+.letra-roja{
+    color: red;
+}
+.letra-morada{
+    color: #AB00FA;
+    background-color: #000000;
+}
+
+P::first-letter{
+    color: #FF0000;
+}
+
+P:first-line{
+    color: #0C00FF;
+}
+
+P::selection{
+    color: #FFFFFF;
+    background-color: #000000;
+}
+a:link{
+    color: #0018ff;
+}
+a:hover{
+    background-color: #00ff06;
+    color: #FFFFFF;
+}

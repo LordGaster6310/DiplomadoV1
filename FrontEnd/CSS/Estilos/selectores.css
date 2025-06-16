@@ -1,0 +1,33 @@
+p{
+    color:#B200B9; /* Texto morado */
+} /* Selector etiqueta */
+
+.fondo-cubiwelt{
+    background-color: #B200B9; /* fondo morada */
+}
+
+#centrar-texto{
+    text-align: center;
+    /* selector Identificador  */
+}
+
+*{
+    font-style: bold;
+    /* Selector universal */
+}
+
+p span{
+    background-color: #000000; /* Fondo negro */
+    color: #ffffff;/* texto blanco */
+}/* selector descendiente */
+
+h3,small{
+    color: #07dace;/* Texto Azul */
+    background-color: #979797;/* fondo gris */
+    /* combinacion de hijos */
+}
+
+div>span{
+    color: #000000;/* texto negro */
+    background-color: #B200B9/* fondo morado */
+}/* selector de hijos */
