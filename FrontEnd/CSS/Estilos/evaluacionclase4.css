@@ -151,6 +151,11 @@ main{
     word-wrap: break-word;
     background: #066ef3;
     background: linear-gradient(90deg,#646464 0%, #a3a3a3 40%, #c8c7c7 80%);
+    overflow-y:  scroll; /* Oculta el contenido desbordado */
+    overflow-x: hidden; /* Oculta el scroll horizontal */
+    white-space: normal; /* Permite que el texto se ajuste a nuevas líneas */
+    text-overflow: ellipsis;
+
 }
 .historia:hover{
     color: rgb(115, 6, 115);
@@ -184,6 +189,11 @@ main{
     word-wrap: break-word;
     background: #066ef3;
     background: linear-gradient(90deg,rgb(131, 57, 8) 0%, rgb(170, 68, 0) 40%, rgb(200, 80, 0)80%);
+    overflow-y:  scroll; /* Oculta el contenido desbordado */
+    overflow-x: hidden; /* Oculta el scroll horizontal */
+    white-space: normal; /* Permite que el texto se ajuste a nuevas líneas */
+    text-overflow: ellipsis;
+
 }
 .preview:hover{
     border: none;
@@ -222,15 +232,16 @@ main{
     zoom: 1.1;
 }
 #textoMuestra{
+    /* padding-right: 100px; */
     position: relative;
     float: none;
-    margin-top: 150px;
+    margin-top: 10px;
     width: 170px;
     word-wrap: break-word;
 }
 .imagen{
     position: relative;
-    width: 250px;
+    width: 240px;
     height: 480px;
     float: left;
     border-radius: 30px;
@@ -318,4 +329,25 @@ footer nav .footer-nav ul li a:hover{
     font-weight: bold;
     color: #ffcc00; /* Color dorado para el texto destacado */
     font-size: 20px; /* Tamaño de fuente más grande */
+}
+.contenedor{
+    float: right;
+    width: 200px;
+    height: 480px;
+    padding: 10px;
+    padding-left: 0;
+    /* margin-right: 20px; */
+     overflow-y:  scroll; /* Oculta el contenido desbordado */
+     overflow-x: hidden; /* Oculta el scroll horizontal */
+    white-space: normal; /* Permite que el texto se ajuste a nuevas líneas */
+    text-overflow: ellipsis; /* Agrega puntos suspensivos si el texto se trunca */
+}
+.contenedor p{
+    font-size: 20px;
+    color: #000; /* Color del texto */
+    margin: 0 auto; /* Elimina el margen por defecto */
+    /* padding: 5px; */
+    padding-left: 4px; /* Agrega un poco de espacio interno */
+    white-space: normal; 
+    word-wrap:break-word;
 }
