@@ -1,61 +1,118 @@
 body{
     background: #000;
 }
+
 .header{
     background:silver;
     background: #b9b9b9;
     background: linear-gradient(51deg,#b9b9b9 0%, #8a8a8a 80%);
     background: -webkit-linear-gradient(51deg,#b9b9b9 0%, #8a8a8a 80%);
     background: -moz-linear-gradient(51deg,#b9b9b9 0%, #8a8a8a 80%);
+    position: relative; /* Necesario para que el submenú se posicione correctamente */
+    z-index: 10; /* Asegura que el menú esté por encima de otros elementos */
 }
+
 nav{
-    list-style: none;
     height: 80px;
-
+    display: flex; /* Convierte nav en un flex container */
+    align-items: center; /* Centra verticalmente los elementos del nav */
+    padding: 0 20px; /* Agrega un poco de padding a los lados */
 }
-nav ul a{
+
+.main-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Convierte la lista principal en un flex container */
+    width: 100%; /* Ocupa todo el ancho del nav */
+    justify-content: flex-start; /* Alinea los ítems al inicio por defecto */
+    align-items: center;
+}
+
+.main-nav li {
+    position: relative; /* Necesario para posicionar el submenú */
+    padding: 20px 15px; /* Espaciado interno para cada ítem del menú */
+    height: 100%; /* Ajusta la altura si es necesario */
+    display: flex; /* Para centrar el contenido del li */
+    align-items: center; /* Centra verticalmente el texto dentro del li */
+}
+
+.main-nav li a {
     text-decoration: none;
-    height: 50px;
-    font-size: 20;
-
-
-}
-nav  a li{
-    position: relative;
-    display: inline-block;
-    height: 100%;
-    margin-left: 40px;
-    margin-right: 80px;
-
-}
-nav a li::after {
-  content: '';
-  position: absolute;
-  bottom: 15px;
-  left: 0;
-  width: 0;
-  height: 2px; /* Grosor de la línea */
-  background-color: blue; /* Color de la línea */
-  transition: width 2s ease; /* Transición para la animación */
+    color: #333; /* Color de texto predeterminado */
+    font-size: 20px;
+    display: block; /* Para que el enlace ocupe todo el espacio del li */
+    padding: 0 10px; /* Espaciado interno para el texto del enlace */
 }
 
-nav a li:hover::after {
-  width: 100%; /* Ancho completo al pasar el cursor */
-}
-
-nav li{
-    height: 30px;
-    padding: 20px 10px;
-}
-.position-izq{
-    float: left;
-}
-.position-dere{
-    float: right;
-}
-#letraHeader{
+#letraHeader {
     font-size: 35px;
+    color: white; /* Color para las letras del header */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para mejor visibilidad */
 }
+
+.main-nav li a::after {
+    content: '';
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    width: 0;
+    height: 2px; /* Grosor de la línea */
+    background-color: blue; /* Color de la línea */
+    transition: width 0.3s ease; /* Transición para la animación */
+}
+
+.main-nav li a:hover::after {
+    width: 100%; /* Ancho completo al pasar el cursor */
+}
+
+/* Alineación a la derecha usando Flexbox */
+.main-nav .align-right {
+    margin-left: auto; /* Empuja este y los siguientes elementos a la derecha */
+}
+
+/* Estilos del Submenú */
+.submenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%; /* Coloca el submenú justo debajo del ítem "secciones" */
+    left: 0;
+    background: #555; /* Fondo del submenú */
+    min-width: 200px; /* Ancho mínimo del submenú */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    opacity: 0; /* Lo hace completamente transparente */
+    visibility: hidden; /* Lo oculta del flujo del documento y de los eventos del mouse */
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Transición para la aparición */
+    z-index: 1; /* Asegura que esté por encima del contenido principal */
+}
+
+.submenu li {
+    padding: 10px 15px;
+    white-space: nowrap; /* Evita que los ítems del submenú se rompan en varias líneas */
+}
+
+.submenu li a {
+    color: white; /* Color de texto para los ítems del submenú */
+    font-size: 18px;
+    text-shadow: none; /* Quita la sombra del texto en el submenú */
+}
+
+.submenu li a:hover {
+    background-color: #777; /* Fondo al pasar el mouse por los ítems del submenú */
+}
+
+/* Mostrar el submenú al pasar el mouse sobre "secciones" */
+.secciones:hover .submenu {
+    opacity: 1; /* Lo hace visible */
+    visibility: visible; /* Lo muestra */
+}
+
+/* --- Fin de la sección de navegación y submenú --- */
+
+
+/* Estilos existentes a partir de aquí */
 .title{
     position: relative;
     display: inline-flex;
@@ -66,11 +123,13 @@ nav li{
     height: 100px;
     width: 500px;
     color: purple;
+    
+    margin:0 auto 20% ;
     justify-content: center;
     align-items: center;
 }
 main{
-    height: 70vh;
+    height: 80vh;
     overflow-y: scroll; /* Habilitar scroll vertical */
     overflow-x: hidden;
 }
@@ -79,24 +138,184 @@ main{
     padding-top: 50px;
 }
 .historia{
+    margin: 0 auto;
     position: relative;
-    color: red;
+    color: rgb(0, 0, 0);
+    text-shadow: -3px -1px 0px rgba(255,0,0,1);
     width: 540px;
     height: 500px;
     display: flex;
     padding: 20px;
-    margin-top: 150px;
-    margin-left: 40%;
-    margin-right: 40%;
     border: white solid 10px;
     font-size: 30px;
     word-wrap: break-word;
     background: #066ef3;
-    background: linear-gradient(90deg,#066ef3 0%, #005dc5 40%, #00438d 80%);
-    background: -webkit-linear-gradient(90deg,#066ef3 0%, #005dc5 40%, #00438d 80%);
-   
-    background: -moz-linear-gradient(90deg,#066ef3 0%, #005dc5 40%, #00438d 80%);
+    background: linear-gradient(90deg,#646464 0%, #a3a3a3 40%, #c8c7c7 80%);
 }
 .historia:hover{
+    color: rgb(115, 6, 115);
+}
+.content .titleG{
+    margin:0 auto 0 25vw;
+    position: relative;
+    display: inline-flex;
+    border-radius: 10px 50px 20px;
+    font-size: 50px;
+    height: 100px;
+    width: 800px;
     color: purple;
+    background: linear-gradient(90deg,#9c0000 0%, #560000 40%, #2f0000 80%);
+    
+    justify-content: center;
+    align-items: center;
+}
+
+.preview{
+    margin: 0 auto;
+    position: relative;
+    color: rgb(0, 0, 0);
+    text-shadow: -3px -1px 0px rgba(255,0,0,1);
+    width: 540px;
+    height: 500px;
+    display: flex;
+    padding: 20px;
+    border: white solid 10px;
+    font-size: 30px;
+    word-wrap: break-word;
+    background: #066ef3;
+    background: linear-gradient(90deg,rgb(131, 57, 8) 0%, rgb(170, 68, 0) 40%, rgb(200, 80, 0)80%);
+}
+.preview:hover{
+    border: none;
+    border-top: 20px double #c81a00;
+    border-right: 7px solid #c81a00;
+    border-bottom: 20px double #c81a00;
+    border-left: 7px solid #c81a00;
+    color: rgb(115, 6, 115);
+}
+.flotador-izquierdo{
+    float: left;
+    
+}
+
+.flotador-derecho{
+    float: right;
+    margin-left: 40px;
+}
+.romper-flotador{
+    clear: both;
+}
+.muestra{
+    position: relative;
+    color: rgb(0, 0, 0);
+    text-shadow: -3px -1px 0px rgba(255,0,0,1);
+    width: 440px;
+    height: 500px;
+    display: inline-flex;
+    border: white solid 10px;
+    font-size: 30px;
+    word-wrap: break-word;
+    background: #066ef3;
+    background: linear-gradient(90deg,#006a00 0%, #008a00 40%, #00a000 80%);
+}
+.muestra:hover{
+    zoom: 1.1;
+}
+#textoMuestra{
+    position: relative;
+    float: none;
+    margin-top: 150px;
+    width: 170px;
+    word-wrap: break-word;
+}
+.imagen{
+    position: relative;
+    width: 250px;
+    height: 480px;
+    float: left;
+    border-radius: 30px;
+    border: #9c0000 solid 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.centrar{
+    clear: both;
+    text-align: center;
+    margin: 0 auto;
+    margin-left: 80px;
+    margin-right: 40px;
+}
+.characters{
+    display: flex;
+    justify-content: center; /* Centra los divs .muestra horizontalmente */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea si no caben */
+    gap: 20px; /* Espacio entre los elementos de los personajes */
+    margin-bottom: 50px; /* Espacio debajo de la sección de personajes */
+}
+.form{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    color: #00a000;
+    border: 11px ridge #ca50ff;
+    background: #3f3f3f;
+    margin-top: 50px;
+}
+h3{
+    font-size: 30px;
+}
+.form-group{
+    font-size: 28px;
+    margin: 20px;
+}
+button{
+    background-color: #4CAF50; /* Verde */
+    border: 5px double #000000;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #45a049;
+}
+footer{
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+footer .footer-nav{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+footer  nav .footer-nav ul{
+    list-style: none;
+    padding: 0;
+}
+footer nav .footer-nav ul li{
+    display: inline;
+    margin: 0 10px;
+}
+footer nav .footer-nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+footer nav .footer-nav ul li a:hover{
+    text-decoration: underline;
+}
+.footer-content span{
+    font-weight: bold;
+    color: #ffcc00; /* Color dorado para el texto destacado */
+    font-size: 20px; /* Tamaño de fuente más grande */
 }
