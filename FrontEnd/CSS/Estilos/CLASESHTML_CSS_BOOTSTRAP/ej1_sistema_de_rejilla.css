@@ -1,0 +1,22 @@
+.row>div{
+    background: #a8e291;
+    margin: 10px;
+    padding: 40px;
+    border: inset 1px black;
+}
+#uno{
+  background: #48ff00;  
+}
+
+#dos{
+  background: #30aa00;  
+
+}
+#tres{
+      background: #278b00;  
+
+}
+#cuatro{
+      background: #123f00;  
+    color: white;
+}
