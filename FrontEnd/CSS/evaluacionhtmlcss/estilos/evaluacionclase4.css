@@ -1,0 +1,387 @@
+body{
+    background: #1d232d;
+}
+/* decorado del header  */
+.header{
+    /* background:silver; */
+    background: #1b0b2e;
+    background: linear-gradient(90deg,#1b0b2e 0%, #340d35 80%);
+    background: -webkit-linear-gradient(90deg,#1b0b2e 0%, #340d35 80%);
+    background: -moz-linear-gradient(90deg,#1b0b2e 0%, #340d35 80%);
+    position: relative; /* Necesario para que el submenú se posicione correctamente */
+    z-index: 10; /* Asegura que el menú esté por encima de otros elementos */
+}
+/* decorado del nav  */
+nav{
+    
+    height: 80px;
+    display: flex; /* Convierte nav en un flex container */
+    align-items: center; /* Centra verticalmente los elementos del nav */
+    padding: 0 20px; /* Agrega un poco de padding a los lados */
+}
+
+/* decorado y configuracion del menu principal */
+.main-nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Convierte la lista principal en un flex container */
+    width: 100%; /* Ocupa todo el ancho del nav */
+    justify-content: flex-start; /* Alinea los ítems al inicio por defecto */
+    align-items: center;
+}
+
+.main-nav li {
+    position: relative; /* Necesario para posicionar el submenú */
+    padding: 20px 15px; /* Espaciado interno para cada ítem del menú */
+    height: 100%; /* Ajusta la altura si es necesario */
+    display: flex; /* Para centrar el contenido del li */
+    align-items: center; /* Centra verticalmente el texto dentro del li */
+}
+
+.main-nav li a {
+    text-decoration: none;
+    color: #333; /* Color de texto predeterminado */
+    font-size: 20px;
+    display: block; /* Para que el enlace ocupe todo el espacio del li */
+    padding: 0 10px; /* Espaciado interno para el texto del enlace */
+}
+
+#letraHeader {
+    font-size: 35px;
+    color: white; /* Color para las letras del header */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Sombra para mejor visibilidad */
+}
+
+.main-nav li a::after {
+    content: '';
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    width: 0;
+    height: 2px; /* Grosor de la línea */
+    background-color: blue; /* Color de la línea */
+    transition: width 0.3s ease; /* Transición para la animación */
+}
+
+.main-nav li a:hover::after {
+    width: 100%; /* Ancho completo al pasar el cursor */
+}
+
+/* Alineación a la derecha usando Flexbox */
+.main-nav .align-right {
+    margin-left: auto; /* Empuja este y los siguientes elementos a la derecha */
+}
+
+/* Estilos del Submenú */
+.submenu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%; /* Coloca el submenú justo debajo del ítem "secciones" */
+    left: 0;
+    background: #1b0b2e;
+    background: linear-gradient(90deg,#1b0b2e 0%, #340d35 80%);
+    background: -webkit-linear-gradient(90deg,#1b0b2e 0%, #340d35 80%);
+    background: -moz-linear-gradient(90deg,#1b0b2e 0%, #340d35 80%); /* Fondo del submenú */
+    min-width: 200px; /* Ancho mínimo del submenú */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+    opacity: 0; /* Lo hace completamente transparente */
+    visibility: hidden; /* Lo oculta del flujo del documento y de los eventos del mouse */
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Transición para la aparición */
+    z-index: 1; /* Asegura que esté por encima del contenido principal */
+}
+
+.submenu li {
+    padding: 10px 15px;
+    white-space: nowrap; /* Evita que los ítems del submenú se rompan en varias líneas */
+}
+
+.submenu li a {
+    color: white; /* Color de texto para los ítems del submenú */
+    font-size: 18px;
+    text-shadow: none; /* Quita la sombra del texto en el submenú */
+}
+
+.submenu li a:hover {
+    background-color: #777; /* Fondo al pasar el mouse por los ítems del submenú */
+}
+
+/* Mostrar el submenú al pasar el mouse sobre "secciones" */
+.secciones:hover .submenu {
+    opacity: 1; /* Lo hace visible */
+    visibility: visible; /* Lo muestra */
+}
+
+/* --- Fin de la sección de navegación y submenú --- */
+
+
+/* area del titulo principal en contenido */
+.title{
+    position: relative;
+    display: inline-flex;
+    padding-top: 15%;
+    padding-left: 40%;
+    padding-right: 40%;
+    font-size: 50px;
+    height: 100px;
+    width: 500px;
+    color: purple;
+    
+    margin:0 auto 20% ;
+    justify-content: center;
+    align-items: center;
+}
+/* configuracion del main */
+main{
+    height: 80vh;
+    overflow-y: scroll; /* Habilitar scroll vertical */
+    overflow-x: hidden;
+}
+/* configuracion de la seccion de contenido */
+.content{
+    display: block;
+    padding-top: 50px;
+}
+/* configuracion de la seccion de historia */
+.historia{
+    margin: 0 auto;
+    position: relative;
+    color: rgb(255, 255, 255);
+    text-shadow: -3px -1px 0px rgba(255,0,0,1);
+    width: 540px;
+    height: 500px;
+    display: flex;
+    padding: 20px;
+    border: rgb(0, 2, 62) solid 10px;
+    border-radius: 40px 20px 40px 20px;
+    font-size: 30px;
+    word-wrap: break-word;
+    background: #430a46;
+    background: linear-gradient(90deg,#430a46 0%, #4e0d20 80%);
+    background: -webkit-linear-gradient(90deg,#430a46 0%, #4e0d20 80%);
+    background: -moz-linear-gradient(90deg,#430a46 0%, #4e0d20 80%);
+    overflow-y:  scroll; /* Oculta el contenido desbordado */
+    overflow-x: hidden; /* Oculta el scroll horizontal */
+    white-space: normal; /* Permite que el texto se ajuste a nuevas líneas */
+    text-overflow: ellipsis;
+
+}
+.historia:hover{
+    color: rgb(82, 82, 82);
+    text-shadow: -3px -1px 0px rgb(255, 255, 255);
+    box-shadow: 35px 2px 13px 0px rgba(93,63,0,0.75);
+    -webkit-box-shadow: 35px 2px 13px 0px rgba(93,63,0,0.75);
+    -moz-box-shadow: 35px 2px 13px 0px rgba(93,63,0,0.75);
+}
+/* configuracion generica para los subtitulo por seccion */
+.content .titleG{
+    margin:0 auto 0 25vw;
+    position: relative;
+    display: inline-flex;
+    border-radius: 10px 50px 20px;
+    font-size: 40px;
+    height: 100px;
+    width: 800px;
+    color: rgb(255, 255, 255);
+    background: #4e0d20;
+    background: linear-gradient(90deg,#4e0d20 0%, #340d35 80%);
+    background: -webkit-linear-gradient(90deg,#4e0d20 0%, #340d35 80%);
+    background: -moz-linear-gradient(90deg,#4e0d20 0%, #340d35 80%);
+    justify-content: center;
+    align-items: center;
+    margin-top:  30px;
+    margin-bottom: 30px;
+}
+/* seccion preview */
+.preview{
+    margin: 0 auto;
+    position: relative;
+    color: rgb(200, 200, 200);
+    text-shadow: -3px -1px 0px rgba(255,0,0,1);
+    width: 540px;
+    height: 500px;
+    display: flex;
+    padding: 20px;
+    border: rgb(102, 0, 0) solid 10px;
+    border-radius: 40px 20px 40px 20px;
+    font-size: 30px;
+    word-wrap: break-word;
+    background: #0d0d2c;
+    background: linear-gradient(90deg,#0d0d2c 0%, #00154e 80%);
+    background: -webkit-linear-gradient(90deg,#0d0d2c 0%, #00154e 80%);
+    background: -moz-linear-gradient(90deg,#0d0d2c 0%, #00154e 80%);
+    overflow-y:  scroll; /* Oculta el contenido desbordado */
+    overflow-x: hidden; /* Oculta el scroll horizontal */
+    white-space: normal; /* Permite que el texto se ajuste a nuevas líneas */
+    text-overflow: ellipsis;
+
+}
+.preview:hover{
+    border: none;
+    border-top: 20px double #c81a00;
+    border-right: 7px solid #c81a00;
+    border-bottom: 20px double #c81a00;
+    border-left: 7px solid #c81a00;
+    color: rgb(129, 129, 129);
+    text-shadow: -3px -1px 0px rgb(255, 255, 255);
+    box-shadow: 35px 2px 13px 0px rgba(93,63,0,0.75);
+    -webkit-box-shadow: 35px 2px 13px 0px rgba(93,63,0,0.75);
+    -moz-box-shadow: 35px 2px 13px 0px rgba(93,63,0,0.75);
+}
+/* configuracion de los flotadores */
+.flotador-izquierdo{
+    float: left;
+    
+}
+
+.flotador-derecho{
+    float: right;
+    margin-left: 40px;
+}
+.romper-flotador{
+    clear: both;
+}
+/* configuracion de la seccion de personajes con muestra (card) */
+.muestra{
+    position: relative;
+    color: rgb(0, 0, 0);
+    text-shadow: -3px -1px 0px rgba(255,0,0,1);
+    width: 440px;
+    height: 500px;
+    display: inline-flex;
+    border: white solid 10px;
+    font-size: 30px;
+    word-wrap: break-word;
+    background: #5d3f00;
+    background: linear-gradient(36deg,#5d3f00 0%, #a06800 80%);
+    background: -webkit-linear-gradient(36deg,#5d3f00 0%, #a06800 80%);
+    background: -moz-linear-gradient(36deg,#5d3f00 0%, #a06800 80%);
+}
+/* configuracion para que al hacer jover las card aumenten su tamaño */
+.muestra:hover{
+    zoom: 1.1;
+}
+#textoMuestra{
+    /* padding-right: 100px; */
+    position: relative;
+    float: none;
+    margin-top: 10px;
+    width: 170px;
+    word-wrap: break-word;
+}
+.imagen{
+    position: relative;
+    width: 240px;
+    height: 480px;
+    float: left;
+    border-radius: 30px;
+    border: #9c0000 solid 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.centrar{
+    clear: both;
+    text-align: center;
+    margin: 0 auto;
+    margin-left: 80px;
+    margin-right: 40px;
+}
+.characters{
+    display: flex;
+    justify-content: center; /* Centra los divs .muestra horizontalmente */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea si no caben */
+    gap: 20px; /* Espacio entre los elementos de los personajes */
+    margin-bottom: 50px; /* Espacio debajo de la sección de personajes */
+}
+/* configuracion del formulario de sugerencias */
+.form{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    color: #00a000;
+    border: 11px ridge #ca50ff;
+    background: #3f3f3f;
+    margin-top: 50px;
+}
+h3{
+    font-size: 30px;
+}
+.form-group{
+    font-size: 28px;
+    margin: 20px;
+}
+button{
+    background-color: #4CAF50; /* Verde */
+    border: 5px double #000000;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #45a049;
+}
+/* configuracion del footer */
+footer{
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+footer .footer-nav{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+footer  .footer-nav ul{
+    list-style: none;
+    padding: 0;
+}
+footer  .footer-nav ul li{
+    display: inline;
+    margin: 0 10px;
+}
+footer  .footer-nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+footer  .footer-nav ul li a:hover{
+    text-decoration: underline;
+}
+.footer-content span{
+    font-weight: bold;
+    color: #ffcc00; /* Color dorado para el texto destacado */
+    font-size: 20px; /* Tamaño de fuente más grande */
+}
+/* configuracion del contenedor del texto de las imagenes posicionado al final para evitar el desbordamiento */
+.contenedor{
+    float: right;
+    width: 200px;
+    height: 480px;
+    padding: 10px;
+    padding-left: 0;
+   
+     overflow-y:  scroll; /* Oculta el contenido desbordado */
+     overflow-x: hidden; /* Oculta el scroll horizontal */
+    white-space: normal; /* Permite que el texto se ajuste a nuevas líneas */
+    text-overflow: ellipsis; /* Agrega puntos suspensivos si el texto se trunca */
+}
+.contenedor p{
+    font-size: 20px;
+    color: #000; /* Color del texto */
+    margin: 0 auto; /* Elimina el margen por defecto */
+    padding-left: 4px; /* Agrega un poco de espacio interno */
+    white-space: normal; 
+    word-wrap:break-word;
+}
