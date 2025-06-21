@@ -1,0 +1,51 @@
+.row-cabecera{
+    background-color: rgb(105, 188, 236);
+    height: 100px;
+    text-align: center;
+}
+
+.row-imagen{
+    background-color:  gainsboro;
+    height: 400px;
+    text-align: center;
+}
+
+.row-noticias{
+    background-color: rgb(105, 188, 236);
+}
+
+.col-noticias{
+    background-color: blue;
+}
+
+.row-testimonios{
+    background-color:  gainsboro;
+    height: 400px;
+}
+
+.col-testimonios{
+    background-color:  grey;
+}
+
+.row-empresa{
+    background-color: rgb(105, 188, 236);
+}
+
+.col-empresa{
+    background-color: blue;
+}
+
+.row-aliados{
+    background-color: gainsboro;
+}
+
+.col-aliados{
+    background-color: gray;
+    text-align: center;
+}
+.col-gris{
+    background-color: rgb(119, 114, 114);
+}
+.col-azul{
+    background-color: blue;
+}

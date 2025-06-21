@@ -1,0 +1,83 @@
+
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../Estilos/css Bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="../../Estilos/CLASESHTML_CSS_BOOTSTRAP/ej7_ejercicio_rejilla.css">
+
+    <title>insignias tooltips ventanas modal</title>
+</head>
+<body>
+   <div class="container">
+               <div><h2 class="text-capitalize text-center text-decoration-underline d-block mb-2">seccion de badges</h2></div>
+        <div class="row">
+        <div class="col-12 m4 text-center">
+            <p>
+                <b>Modlulo git/git hub</b><span class="badge bg-info p-2">finalizado</span>
+            </p>
+            <p>
+                <b>Modlulo base de datos</b><span class="badge bg-info p-2 rounded-pill">finalizado</span>
+            </p>
+        </div>
+
+        </div>
+            <div><h2 class="text-capitalize text-center text-decoration-underline d-block mb-2">seccion de tooltips</h2></div>
+            <div class="row m-5 text-center">
+                <div class="col">
+                    <button type="button" data-bs-toggle="tooltip" data-bs-placement="left" title="tooltip izquierda" class="btn btn-danger">boton</button>
+                    <button type="button" data-bs-toggle="tooltip" data-bs-placement="top" title="tooltip arriba" class="btn btn-success">boton</button>
+                    <button type="button" data-bs-toggle="tooltip" data-bs-placement="right" title="tooltip derecha" class="btn btn-warning">boton</button>
+                    <button type="button" data-bs-toggle="tooltip" data-bs-placement="bottom" title="tooltip abajo" class="btn btn-info">boton</button>
+                </div>
+            </div>
+            <div><h2 class="text-capitalize text-center text-decoration-underline d-block mb-2">seccion de ventana modal</h2></div>
+            <div>
+                <div class="row mt-5">
+                    <div class="col text-center">
+                         <button class="btn btn-success btn-md" data-bs-toggle="modal" data-bs-target="#ventana-modal-ejemplo">Consulta aqui</button>
+                         <div class="modal fade" id="ventana-modal-ejemplo" tabindex="-1" data-bs-backdrop="static">
+                        <!-- tabindex permite q la ventana modal funcione moviendo el foco del teclado al modal -->
+                         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title">esto es un ejemplo</h5>
+                                    <button class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, explicabo blanditiis eos debitis adipisci, labore est molestiae neque tempora tenetur quis ex sit nihil autem consequuntur dolor excepturi quisquam, possimus earum quibusdam sunt nesciunt soluta. Nisi sunt illo commodi velit nemo dolore corrupti libero ducimus maiores eaque, id assumenda cupiditate vitae beatae aliquid architecto ut! Assumenda excepturi laboriosam commodi, accusamus similique magni est iusto voluptate dolores molestias! Ducimus sed atque deleniti labore itaque. Veritatis ratione doloremque esse, ipsa porro saepe accusamus, laboriosam doloribus cupiditate voluptatem quas! Doloribus sint debitis ut enim, quas voluptatibus assumenda obcaecati optio est fugit cupiditate ullam aliquid, consequatur maiores. Cum minus, magni reiciendis laborum totam in perferendis suscipit nihil repellendus libero rem dolor enim dolorum fuga ipsam vel commodi non error nesciunt labore rerum ducimus nobis doloribus magnam! Quaerat perferendis, autem ducimus itaque distinctio aperiam magni eveniet commodi nobis maxime necessitatibus tenetur maiores animi eligendi ipsum saepe hic, amet iste! Provident aperiam eveniet labore necessitatibus, tempora iste eos adipisci temporibus consequatur nam consectetur ipsa voluptas, ipsam explicabo velit rem molestias porro, facilis cum? Veritatis maiores eveniet sapiente, nihil possimus fugiat! Provident eligendi doloribus laudantium impedit libero ipsum odio architecto quas ab illo voluptatum error, assumenda molestiae.</div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-danger" type="button" data-bs-dismiss="modal">cancelar</button><button class="btn btn-success" type="button" acepto=""></button>
+                                </div>
+
+                            </div>
+                         </div>
+                    </div>
+                    </div>
+                   
+                    
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+   </div>
+    <script src="../../../js/js Bootstrap/bootstrap.bundle.min.js"></script>
+    <script>
+       var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+		var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+			return new bootstrap.Tooltip(tooltipTriggerEl)
+		})
+    </script>
+</body>
+</html>
+    
